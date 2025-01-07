@@ -1,0 +1,21 @@
+[tool.poetry]
+authors = ["Vicente Agüero <vicenteaguero>"]
+description = "A tool designed to explore all the capabilities of Tree-based Machine Learning models. App uses Python and is a Streamlit-based web app."
+license = "MIT"
+name = "forestexplorer"
+packages = [
+  {include = "forestexplorer", from = "."},
+  {include = "streamlit", from = "."},
+]
+readme = "README.md"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.8.6"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
